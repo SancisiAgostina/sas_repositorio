@@ -1,0 +1,150 @@
+.gridProductos{
+        width: 90%;
+        align-items: center;
+        justify-content: center;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        grid-column-gap: 3px;
+        grid-row-gap: 6px;
+        grid-template-areas:
+        "producto1 descripcion1 descripcion2 producto2"
+        "descripcion3 producto3 producto4 descripcion4"
+        "producto5 descripcion5 descripcion6 producto6"
+        "descripcion7 producto7 producto8 descripcion8"
+        "producto9 descripcion9 descripcion10 producto10"
+        ;}
+        
+@mixin p {
+     font-size: 0,5rem; 
+     color: rgb(156, 187, 167); 
+     text-align: center;
+}
+
+.comprar{
+        @include p;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        background: none;
+        border: 3px solid rgb(156, 187, 167); 
+        border-radius: 5px;
+        line-height: 1.5em;
+        -webkit-align-self: flex-end;
+        -ms-flex-item-align: end;
+        align-self: flex-end;
+        -webkit-transition: all .2s ease;
+        transition: all .2s ease;
+}
+
+.fotosIzq{
+        width: 20vw;
+        border-top-left-radius:7px;
+        border-bottom-right-radius: 7px;
+}
+
+.fotosDer{
+        width: 20vw;
+        border-top-right-radius:7px;
+        border-bottom-left-radius: 7px;
+}
+
+        .producto1 { 
+                @extend .fotosIzq;
+                grid-area: producto1;
+        }
+
+        .descripcion1 { 
+                @include p;
+                grid-area: descripcion1; 
+        }
+        
+        .producto2 { 
+                @extend .fotosDer;
+                grid-area: producto2; 
+        }
+        
+        .descripcion2 { 
+                @include p;
+                grid-area: descripcion2; 
+        }
+        
+        .producto3 { 
+                @extend .fotosIzq;
+                grid-area: producto3; 
+        }
+        
+        .descripcion3 { 
+                @include p;
+                grid-area: descripcion3; 
+        }
+        
+        .producto4 { 
+                @extend .fotosDer;
+                grid-area: producto4; 
+        }
+        
+        .descripcion4 { 
+                @include p;
+                grid-area: descripcion4; 
+        }
+        
+        .producto5 { 
+                @extend .fotosIzq;
+                grid-area: producto5; 
+        }
+        
+        .descripcion5 { 
+                @include p;
+                grid-area: descripcion5; 
+        }
+        
+        .producto6 { 
+                @extend .fotosDer;
+                grid-area: producto6; 
+        }
+        
+        .descripcion6 { 
+                @include p;
+                grid-area: descripcion6; 
+        }
+        
+        .producto7 { 
+                @extend .fotosIzq;
+                grid-area: producto7; 
+        }
+        
+        .descripción7{
+                @include p;
+                grid-area: descripcion7;
+        }
+        
+        .producto8{ 
+                @extend .fotosDer;
+                grid-area: producto8;
+        }
+        
+        .descripcion8{
+                @include p;
+                grid-area: descripcion8;
+        }
+        
+        .producto9{
+                @extend .fotosIzq;
+                grid-area: producto9;
+        }
+        
+        .descripción9{
+                @include p;
+                grid-area: descripcion9;
+        }
+        
+        .producto10{
+                @extend .fotosDer;
+                grid-area: producto10;
+        }
+        
+        .descripcion10{
+                @include p;
+                grid-area: descripcion10;
+        }

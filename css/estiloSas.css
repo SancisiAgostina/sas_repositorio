@@ -1,0 +1,351 @@
+*{
+    margin:0%;
+    padding:0%;
+    list-style: none;
+    text-decoration: none;
+}
+
+/*index*/
+.bodyIndex{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    font-family: 'Arapey', serif;
+    background-color: rgb(253, 252, 252);
+}
+
+header{
+    height: 25vh;
+    width: 100%;
+    background-image:linear-gradient(to bottom, #ffe8df,rgb(253, 252, 252));
+    display:flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: solid 7px rgb(148,152,94);
+}
+
+h1{
+    animation-duration: 5s;
+    animation-name: show;
+}
+
+@keyframes show {
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+    }
+}
+/*menú de navegación*/
+
+.sectionMenu ul{
+    width: 100vw;
+    height: 12vh;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content:space-evenly;
+    align-items: center;
+    /*box model*/
+    margin-top:5px;
+    margin-bottom:30px;
+    border:10px;
+    padding: 10px;
+}
+
+.fancyButton{
+    offset: 10px;
+    border:0;
+    background: transparent;
+    letter-spacing: .25em;
+    outline: none;
+	cursor: pointer;
+	font-weight: bold; 
+    font-family: 'Arapey', serif;
+    color:black;
+    font-size: 14px;
+    text-decoration: none;
+    list-style: none;
+}
+
+
+/*sas homemade bakery -> titulo*/
+.titulo{
+    text-align:center;
+    color: rgb(211,225,216);
+    font-size: 4rem;
+    font-weight: bold;
+    font-style: italic;
+    margin-top: 20px;
+}
+
+
+
+/*iconos/imagenes*/
+.logoSas {
+    width: 5vw;
+}
+
+
+.iconoCarrito {
+    width: 3vw;
+}
+
+/*main*/
+
+.Index{
+    width: 100%;
+}
+
+/*carrusel en futuro con bootstrap
+.carrusel {
+    width:100%;
+    height: 35em;
+    background-image:url("../img/eclipseFondo.jpg");
+    background-size:40%;
+}
+
+.carrusel div{
+    justify-content: center;
+    align-items: center;
+    height: 35em;
+}
+
+.carruselImg{
+    height: 35em;
+}
+*/
+
+/*reseñas*/
+.gridReseñas{
+    display:grid;
+    grid-template-columns:repeat(3, 1fr);
+    grid-template-rows:(1, 100%);
+    grid-template-areas: 
+    ". reseña ."
+}
+.reseñas{
+    display: block;
+    color:rgb(148,152,94);
+    background-color: rgb(196,198,165);
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+    font-size: 0,5rem;
+    text-align: center;
+    object-position: center;
+} /*no pude centrarlo, preguntar como*/
+
+.reseñas{
+    grid-area: reseña;
+}
+
+.comentarios{
+    width:100%;
+    height: 35vh;
+    display:flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding:5px;
+}
+
+.comentarios div{
+align-items: center;
+justify-content: space-between;
+padding-left:20px;
+padding-right: 20px;
+text-align: center;
+}
+
+.comentarios p{
+    font-size: 0,5rem;
+}
+
+.nombre {
+    justify-content: center;
+    background-color: rgb(196,198,165);
+    display: inline-block;
+    width: 10vw;
+    padding: 2px;
+    margin-bottom: 10px;
+}
+
+.nombre:hover{
+    transform:skew(10deg,5deg);
+}
+
+footer{
+    display:flex;
+    width: 100%;
+    height: 100px;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+    grid-area: "footer";
+    background-image: linear-gradient(to top,rgb(211,225,216),rgb(253, 252, 252));
+}
+
+footer img{
+    width: 20px;
+    margin: 3px;
+}
+
+footer nav {
+    align-content: right;
+    margin-left: 5%;
+} 
+
+footer div form{
+    align-content: center;
+}
+
+footer div form input{
+    background-color: #F8ECE7;
+}
+
+.footer-d-u {
+    align-content: left;
+    margin-right: 5%;
+}
+
+.gridFotos{
+    width: 100%;
+    height: 85%;
+    display: grid;
+    grid-gap: none;
+    grid-template-columns:repeat(4, 20% 30% 15% 35%);
+    grid-template-rows: repeat(5,auto);
+    grid-template-areas: 
+    ". fotoUno . fotoDos"
+    "fotoTres . fotoCuatro ."
+    ". fotoCinco . fotoSeis"
+    "fotoSiete . fotoOcho ."
+    ". fotoNueve . fotoDiez";
+}
+
+.gridFotos div{
+width:25%;
+height: 18%;
+padding: 20px;
+margin: 20px;
+align-items: center;
+justify-content: center;
+}
+
+.gridFotos div img{
+    width: 20vw;
+    align-items: center;
+}
+
+.gridFotos div img:hover{
+    transform: scale(1.2);
+}
+
+
+.fotoUno{
+    grid-area: fotoUno;
+    border-top-left-radius: 7px;
+}
+
+.fotoDos{
+    grid-area: fotoDos;
+}
+
+.fotoTres{
+    grid-area: fotoTres;
+}
+
+.fotoCuatro{
+    grid-area: fotoCuatro;
+}
+
+.fotoCinco{
+    grid-area: fotoCinco;
+}
+
+.fotoSeis{
+    grid-area: fotoSeis;
+}
+
+.fotoSiete{
+    grid-area: fotoSiete;
+}
+
+.fotoOcho{
+    grid-area: fotoOcho;
+}
+
+.fotoNueve{
+    grid-area: fotoNueve;
+}
+
+.fotoDiez{
+    grid-area: fotoDiez;
+}
+
+/*desktop*/
+@media screen and (max-width: 1024px) {
+}
+
+@media screen and (max-width: 992px) {
+}
+
+/*Tablet*/
+@media screen and (max-width: 600px) {
+    header{
+        display: grid;
+        grid-template-columns: repeat(3,70% 15% 15%);
+        grid-template-rows:(1,100%);
+        grid-template-areas: "titulo logo carrito";
+    }
+    
+    
+    .titulo{
+        font-size: 2rem;
+    }
+
+    .titulo{
+        grid-area: titulo;
+    }
+
+    .logoSas{
+        grid-area: logo;
+    }
+
+    .iconoCarrito{
+        grid-area: carrito;
+    }
+
+    .sectionMenu nav ul{
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        height: 30vh;
+        margin: none;
+    }
+
+    .comentarios div {
+        display: flex;
+        flex-flow: column wrap;
+        text-align: center;
+    }
+
+    footer{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+/*celular*/
+@media screen and (max-width: 480px) {
+    .bodyIndex{
+        font-size: 0,5rem;
+    }
+}
+

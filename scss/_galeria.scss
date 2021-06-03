@@ -1,0 +1,86 @@
+@mixin colores($borderRadius, $background){
+    border-radius: $borderRadius;
+    background-color: $background;
+}
+.gridFotos{
+    width: 100%;
+    height: 85%;
+    display: grid;
+    grid-gap: none;
+    grid-template-columns:repeat(4, 20% 30% 15% 35%);
+    grid-template-rows: repeat(5,auto);
+    grid-template-areas: 
+    ". fotoUno . fotoDos"
+    "fotoTres . fotoCuatro ."
+    ". fotoCinco . fotoSeis"
+    "fotoSiete . fotoOcho ."
+    ". fotoNueve . fotoDiez";
+    div {
+        width: 75%;
+        height: 88%;
+        padding: 20px;
+        margin: 20px;
+        align-items: center;
+        justify-content: center;
+        img {
+            width: 20vw;
+            align-items: center;
+            justify-self: center;
+        }
+        img:hover{
+            transform: scale(1.2);
+        }
+    }
+    
+    .fotoUno{
+        @include colores(5px, rgb(156, 187, 167));
+        grid-area: fotoUno;
+        border-top-left-radius: 7px;
+    }
+    
+    .fotoDos{
+        @include colores(5px, #ffe8df);
+        grid-area: fotoDos;
+    }
+    
+    .fotoTres{
+        @include colores(5px, rgb(156, 187, 167));
+        grid-area: fotoTres;
+    }
+    
+    .fotoCuatro{
+        @include colores(5px, #ffe8df);
+        grid-area: fotoCuatro;
+    }
+    
+    .fotoCinco{
+        @include colores(5px, rgb(156, 187, 167));
+        grid-area: fotoCinco;
+    }
+    
+    .fotoSeis{
+        @include colores(5px, #ffe8df);
+        grid-area: fotoSeis;
+    }
+    
+    .fotoSiete{
+        @include colores(5px, rgb(156, 187, 167));
+        grid-area: fotoSiete;
+    }
+    
+    .fotoOcho{
+        @include colores(5px, #ffe8df);
+        grid-area: fotoOcho;
+    }
+    
+    .fotoNueve{
+        @include colores(5px, rgb(156, 187, 167));
+        grid-area: fotoNueve;
+    }
+    
+    .fotoDiez{
+        @include colores(5px, #ffe8df);
+        grid-area: fotoDiez;
+    }
+    
+}
