@@ -7,8 +7,8 @@
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(5, 1fr);
-        grid-column-gap: 3px;
-        grid-row-gap: 6px;
+        grid-column-gap: 1vw;
+        grid-row-gap: 1vw;
         grid-template-areas:
         "producto1 descripcion1 descripcion2 producto2"
         "descripcion3 producto3 producto4 descripcion4"
@@ -18,7 +18,7 @@
         ;}
         
 @mixin p{
-     font-size: 2vw;
+     font-size: 1vw;
      color: rgb(156, 187, 167); 
      text-align: center;
 }
@@ -40,15 +40,17 @@
 }
 
 .fotosIzq{
-        width: 20vw;
+        width: 15vw;
         border-top-left-radius:7px;
         border-bottom-right-radius: 7px;
+        overflow: hidden;
 }
 
 .fotosDer{
-        width: 20vw;
+        width: 15vw;
         border-top-right-radius:7px;
         border-bottom-left-radius: 7px;
+        overflow: hidden;
 }
 
         .producto1 { 

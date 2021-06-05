@@ -8,12 +8,12 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(5, 1fr);
-  grid-column-gap: 3px;
-  grid-row-gap: 6px;
+  grid-column-gap: 1vw;
+  grid-row-gap: 1vw;
   grid-template-areas: "producto1 descripcion1 descripcion2 producto2" "descripcion3 producto3 producto4 descripcion4" "producto5 descripcion5 descripcion6 producto6" "descripcion7 producto7 producto8 descripcion8" "producto9 descripcion9 descripcion10 producto10"; }
 
 .comprar {
-  font-size: 2vw;
+  font-size: 1vw;
   color: #9cbba7;
   text-align: center;
   align-items: center;
@@ -30,20 +30,22 @@
   transition: all .2s ease; }
 
 .fotosIzq, .producto1, .producto3, .producto5, .producto7, .producto9 {
-  width: 20vw;
+  width: 15vw;
   border-top-left-radius: 7px;
-  border-bottom-right-radius: 7px; }
+  border-bottom-right-radius: 7px;
+  overflow: hidden; }
 
 .fotosDer, .producto2, .producto4, .producto6, .producto8, .producto10 {
-  width: 20vw;
+  width: 15vw;
   border-top-right-radius: 7px;
-  border-bottom-left-radius: 7px; }
+  border-bottom-left-radius: 7px;
+  overflow: hidden; }
 
 .producto1 {
   grid-area: producto1; }
 
 .descripcion1 {
-  font-size: 2vw;
+  font-size: 1vw;
   color: #9cbba7;
   text-align: center;
   grid-area: descripcion1; }
@@ -52,7 +54,7 @@
   grid-area: producto2; }
 
 .descripcion2 {
-  font-size: 2vw;
+  font-size: 1vw;
   color: #9cbba7;
   text-align: center;
   grid-area: descripcion2; }
@@ -61,7 +63,7 @@
   grid-area: producto3; }
 
 .descripcion3 {
-  font-size: 2vw;
+  font-size: 1vw;
   color: #9cbba7;
   text-align: center;
   grid-area: descripcion3; }
@@ -70,7 +72,7 @@
   grid-area: producto4; }
 
 .descripcion4 {
-  font-size: 2vw;
+  font-size: 1vw;
   color: #9cbba7;
   text-align: center;
   grid-area: descripcion4; }
@@ -79,7 +81,7 @@
   grid-area: producto5; }
 
 .descripcion5 {
-  font-size: 2vw;
+  font-size: 1vw;
   color: #9cbba7;
   text-align: center;
   grid-area: descripcion5; }
@@ -88,7 +90,7 @@
   grid-area: producto6; }
 
 .descripcion6 {
-  font-size: 2vw;
+  font-size: 1vw;
   color: #9cbba7;
   text-align: center;
   grid-area: descripcion6; }
@@ -97,7 +99,7 @@
   grid-area: producto7; }
 
 .descripción7 {
-  font-size: 2vw;
+  font-size: 1vw;
   color: #9cbba7;
   text-align: center;
   grid-area: descripcion7; }
@@ -106,7 +108,7 @@
   grid-area: producto8; }
 
 .descripcion8 {
-  font-size: 2vw;
+  font-size: 1vw;
   color: #9cbba7;
   text-align: center;
   grid-area: descripcion8; }
@@ -121,7 +123,7 @@
   grid-area: producto10; }
 
 .descripcion10 {
-  font-size: 2vw;
+  font-size: 1vw;
   color: #9cbba7;
   text-align: center;
   grid-area: descripcion10; }
