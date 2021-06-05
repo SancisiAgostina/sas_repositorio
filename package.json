@@ -7,11 +7,19 @@
     "build-css": "node-sass --include-path scss scss/prueba.scss css/pruebacss.css",
     "watch-css": "nodemon -e scss -x \"npm run build-css\""
   },
-  "author": "",
+  "author": "agostina",
   "license": "ISC",
   "devDependencies": {
     "node-sass": "^6.0.0",
     "nodemon": "^2.0.7"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SancisiAgostina/sas_repositorio.git"
+  },
+  "bugs": {
+    "url": "https://github.com/SancisiAgostina/sas_repositorio/issues"
+  },
+  "homepage": "https://github.com/SancisiAgostina/sas_repositorio#readme",
   "description": ""
 }

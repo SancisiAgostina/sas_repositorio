@@ -1,0 +1,124 @@
+.page{
+    align-items: center;
+}
+
+.gridMD{
+    width: 90%;
+    height: 65vh;
+    border: solid 3px rgb(148,152,94);
+    align-items: center;
+    padding-left: px;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 10vh;
+    display: grid;
+    grid-template-columns: 15% 21% 21% 21% 22%;
+    grid-template-rows: 10% 22% 22% 23% 22%;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    grid-template-areas:
+        "column1 column2 column3 column4 column5"
+        "row2 descripcion1 descripcion2 descripcion3 descripcion4"
+        "row3 descripcion5 descripcion6 descripcion7 descripcion8"
+        "row4 descripcion9 descripcion10 descripcion11 descripcion12"
+        "row5 descripcion13 descripcion14 descripcion15 descripcion16";
+    
+    .gridMD_div1 { 
+        @extend .PMD;
+        @extend .borderGrid;
+        grid-area: column1;}
+    .gridMD_div2 { 
+        @extend .PMD;
+        @extend .borderGrid;
+        grid-area: column2; }
+    .gridMD_div3 { 
+        @extend .PMD;
+        @extend .borderGrid;
+        grid-area: column3; }
+    .gridMD_div4 { 
+        @extend .PMD;
+        @extend .borderGrid;
+        grid-area: column4; }
+    .gridMD_div5 { 
+        @extend .PMD;
+        border-bottom: solid 3px rgb(148,152,94);
+        grid-area: column5; }
+    .gridMD_div6 { 
+        @extend .PMD;
+        @extend .borderGrid;
+        grid-area: row2;}
+    .gridMD_div7 { 
+        @extend .PMD2;
+        @extend .borderGrid;
+        grid-area: descripcion1; }
+    .gridMD_div8 { 
+        @extend .PMD2;
+        grid-area: descripcion2; }
+    .gridMD_div9 { 
+        @extend .PMD2;
+        grid-area: descripcion3; }
+    .gridMD_div10 { 
+        @extend .PMD2;
+        grid-area: descripcion4; }
+    .gridMD_div11 { 
+        @extend .PMD;
+        grid-area: row3;}
+    .gridMD_div12 { 
+        @extend .PMD2;
+        grid-area: descripcion5; }
+    .gridMD_div13 { 
+        @extend .PMD2;
+        grid-area: descripcion6; }
+    .gridMD_div14 { 
+        @extend .PMD2;
+        grid-area: descripcion7; }
+    .gridMD_div15 { 
+        @extend .PMD2;
+        grid-area: descripcion8; }
+    .gridMD_div16 { 
+        @extend .PMD;
+        grid-area: row4;} 
+    .gridMD_div17 { 
+        @extend .PMD2;
+        grid-area: descripcion9; }
+    .gridMD_div18 { 
+        @extend .PMD2;
+        grid-area: descripcion10; }
+    .gridMD_div19 { 
+        @extend .PMD2;
+        grid-area: descripcion11; }
+    .gridMD_div20 { 
+        @extend .PMD2;
+        grid-area: descripcion12; }
+    .gridMD_div21 { 
+        @extend .PMD;
+        grid-area: row5;}
+    .gridMD_div22 { 
+        @extend .PMD2;
+        grid-area: descripcion13; }
+    .gridMD_div23 { 
+        @extend .PMD2;
+        grid-area: descripcion14; }
+    .gridMD_div24 { 
+        @extend .PMD2;
+        grid-area: descripcion15; }
+    .gridMD_div25 {  
+        @extend .PMD2;
+        grid-area: descripcion16; }
+}
+
+.PMD {
+    text-align: center;
+    font-size: 18px;
+}
+
+.PMD2{
+    text-align: left;
+    font-size: 13px;
+    padding: 2px;
+}
+
+.borderGrid{
+    border-bottom: solid 3px rgb(148,152,94);
+    border-right: solid 3px rgb(148,152,94);
+}

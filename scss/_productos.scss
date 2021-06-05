@@ -1,5 +1,7 @@
 .gridProductos{
-        width: 90%;
+        width: 100%;
+        height: auto;
+        padding-bottom:10vh;
         align-items: center;
         justify-content: center;
         display: grid;
@@ -15,8 +17,8 @@
         "producto9 descripcion9 descripcion10 producto10"
         ;}
         
-@mixin p {
-     font-size: 0,5rem; 
+@mixin p{
+     font-size: 2vw;
      color: rgb(156, 187, 167); 
      text-align: center;
 }
@@ -135,7 +137,6 @@
         }
         
         .descripción9{
-                @include p;
                 grid-area: descripcion9;
         }
         
