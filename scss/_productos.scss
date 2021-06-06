@@ -6,10 +6,11 @@
         justify-content: center;
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(5, 1fr);
+        grid-template-rows: repeat(6, 1fr);
         grid-column-gap: 1vw;
         grid-row-gap: 1vw;
         grid-template-areas:
+        ". h2 h2 . "
         "producto1 descripcion1 descripcion2 producto2"
         "descripcion3 producto3 producto4 descripcion4"
         "producto5 descripcion5 descripcion6 producto6"
@@ -52,7 +53,6 @@
         border-bottom-left-radius: 7px;
         overflow: hidden;
 }
-
         .producto1 { 
                 @extend .fotosIzq;
                 grid-area: producto1;
@@ -150,4 +150,26 @@
         .descripcion10{
                 @include p;
                 grid-area: descripcion10;
+        }
+
+        /*preguntar xq no toma las media querie*/
+        @media screen and (max-width: 800px){
+                .gridProductos{
+                        display: grid;
+                        grid-template-columns: 1fr 1fr;
+                        grid-template-rows: repeat(10, 10%);
+                        grid-column-gap: 1px;
+                        grid-row-gap: 1px;
+                        grid-template-areas: 
+                        "producto1 descripcion1"
+                        "descripcion2 producto2"
+                        "descripcion3 producto3"
+                        "producto4 descripcion4"
+                        "producto5 descripcion5"
+                        "descripcion6 producto6"
+                        "descripcion7 producto7"
+                        "producto8 descripcion8"
+                        "producto9 descripcion9"
+                        "descripcion10 producto10";
+                }
         }
