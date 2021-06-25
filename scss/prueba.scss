@@ -82,6 +82,13 @@
         list-style: none;
     }
 
+    .sectionMenu__li li a:hover{
+        color: rgb(116, 113, 113);
+    }
+    
+
+
+
 
 footer{
     display:flex;
@@ -125,11 +132,12 @@ footer{
     }
 
     footer{
+        height: auto;
         display:flex;
         flex-direction: column;
     
         img{
-            width: 3vw;
+            width: 4vw;
         }
         .footer-d-u{
             font-size: 12px;
@@ -156,5 +164,133 @@ footer{
             margin: 4px;
         }
     }
+
+    .nav1{
+        position:relative;
+        overflow-y: scroll;
+    }
+
+    .hamburguesa{
+        position: absolute;
+        cursor: pointer;
+        margin-top: 3vh;
+        z-index: 2;
+        
+
+        .linea{
+            width: 30px;
+            height: 3px;
+            background-color: black;
+            margin:5px;
+        }
+    }
+    .nav-links{
+        display: block;
+        position: fixed;
+        height: auto;
+        width: 100%;
+        flex-direction: column;
+        clip-path: circle(10px at 10% -10%);
+        -webkit-clip-path: circle(10px at 10% -10%);
+        transition: all 1s ease-out;
+        pointer-events: none;
+        background-image:linear-gradient(to right, #fcddd1,rgb(253, 252, 252));
+
+    }
+
+    .nav-links.open{
+        clip-path: circle(900px at 10% -10%);
+        -webkit-clip-path: circle(900px at 10% -10%);
+        pointer-events: all;
+    }
+
+    .carrusel.oculto{
+        display: none;
+    }
+}
+
+.nav1{
+    height: 10vh;
+    background-color: transparent;
+}
+
+.nav-links{
+    display:flex;
+    list-style: none;
+    height: 100%;
+    background-color: transparent;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.nav-links li a{
+    color: black;
+    text-decoration:none;
+}
+
+.header2{
+    background-image:linear-gradient(to bottom, #fcddd1,rgb(253, 252, 252));
+    width: 100%;
+    height: auto;
+}
+
+.headerGrid{
+    border-bottom: solid 7px rgb(148,152,94);
+    width: 100%;
+    height: auto;
+    display:grid;
+    grid-template-columns:(3, 20% 60% 20%);
+    grid-template-rows:(2, 80% 20%);
+    grid-template-areas:". titulo ."
+    "logo titulo carrito";
+}
+
+.logo{
+    grid-area: logo;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.carrito{
+    grid-area: carrito;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.titulo{
+        grid-area: titulo;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+}
+
+.logoEdit{
+    width: 4vw;
+    margin-left: 10px;
+    margin-left: 10%;
+    align-items: center;
+    justify-content: center;
+}
+
+.tituloEdit{
+        width: 10em;
+        animation-duration: 5s;
+        animation-name: show;
+        text-align:center;
+        color: rgb(211,225,216);
+        font-size: 6vw;
+        font-weight: bold;
+        font-style: italic;
+        margin-top: 20px;
+        margin-left: 10%;
+}
+
+.carritoEdit{
+    width: 3vw;
+    margin-left: 75%;
+    margin-top: 17%;
 }
 
