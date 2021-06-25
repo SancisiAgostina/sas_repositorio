@@ -13,11 +13,11 @@
   grid-template-areas: ". h2 h2 . " "producto1 descripcion1 descripcion2 producto2" "descripcion3 producto3 producto4 descripcion4" "producto5 descripcion5 descripcion6 producto6" "descripcion7 producto7 producto8 descripcion8" "producto9 descripcion9 descripcion10 producto10"; }
 
 .comprar {
-  font-size: 1vw;
-  color: #9cbba7;
   text-align: center;
   align-items: center;
   justify-content: center;
+  margin-left: 42%;
+  margin-right: auto;
   cursor: pointer;
   background: none;
   border: 3px solid #9cbba7;
@@ -27,7 +27,8 @@
   -ms-flex-item-align: end;
   align-self: flex-end;
   -webkit-transition: all .2s ease;
-  transition: all .2s ease; }
+  transition: all .2s ease;
+  margin-bottom: 5vw; }
 
 .fotosIzq, .producto1, .producto3, .producto5, .producto7, .producto9 {
   width: 15vw;
@@ -45,8 +46,6 @@
   grid-area: producto1; }
 
 .descripcion1 {
-  font-size: 1vw;
-  color: #9cbba7;
   text-align: center;
   grid-area: descripcion1; }
 
@@ -54,8 +53,6 @@
   grid-area: producto2; }
 
 .descripcion2 {
-  font-size: 1vw;
-  color: #9cbba7;
   text-align: center;
   grid-area: descripcion2; }
 
@@ -63,8 +60,6 @@
   grid-area: producto3; }
 
 .descripcion3 {
-  font-size: 1vw;
-  color: #9cbba7;
   text-align: center;
   grid-area: descripcion3; }
 
@@ -72,8 +67,6 @@
   grid-area: producto4; }
 
 .descripcion4 {
-  font-size: 1vw;
-  color: #9cbba7;
   text-align: center;
   grid-area: descripcion4; }
 
@@ -81,8 +74,6 @@
   grid-area: producto5; }
 
 .descripcion5 {
-  font-size: 1vw;
-  color: #9cbba7;
   text-align: center;
   grid-area: descripcion5; }
 
@@ -90,8 +81,6 @@
   grid-area: producto6; }
 
 .descripcion6 {
-  font-size: 1vw;
-  color: #9cbba7;
   text-align: center;
   grid-area: descripcion6; }
 
@@ -99,8 +88,7 @@
   grid-area: producto7; }
 
 .descripción7 {
-  font-size: 1vw;
-  color: #9cbba7;
+  text-align: center;
   text-align: center;
   grid-area: descripcion7; }
 
@@ -108,8 +96,6 @@
   grid-area: producto8; }
 
 .descripcion8 {
-  font-size: 1vw;
-  color: #9cbba7;
   text-align: center;
   grid-area: descripcion8; }
 
@@ -117,18 +103,16 @@
   grid-area: producto9; }
 
 .descripción9 {
+  text-align: center;
   grid-area: descripcion9; }
 
 .producto10 {
   grid-area: producto10; }
 
 .descripcion10 {
-  font-size: 1vw;
-  color: #9cbba7;
   text-align: center;
   grid-area: descripcion10; }
 
-/*preguntar xq no toma las media querie*/
 @media screen and (max-width: 800px) {
   .gridProductos {
     display: grid;
@@ -202,15 +186,15 @@
     grid-area: fotoDiez; }
 
 .gridVideos {
-  width: 100%;
-  height: 90%;
   display: grid;
-  grid-gap: 4px;
-  grid-template-columns: repeat(2, 1fr 1fr);
-  grid-template-rows: repeat(6, auto);
-  grid-template-areas: ". video1" "video2 ." ". video3" "video4 ." ". video5" "video6 ."; }
+  grid-template-columns: 0.7fr 1fr 0.5fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 8px 0px;
+  grid-template-areas: ". video1 ." ". video2 ." ". video3 ." ". video4 ." ". video5 ." ". video6 ."; }
 
 .video1 {
+  justify-content: center;
+  align-items: center;
   grid-area: video1; }
 
 .video2 {
@@ -227,6 +211,10 @@
 
 .video6 {
   grid-area: video6; }
+
+html, body, .gridVideos {
+  height: 100%;
+  margin: 0; }
 
 .bodyIndex {
   width: 100%;
@@ -551,8 +539,25 @@ footer {
     align-content: left;
     margin-right: 5%; }
 
-/*preguntar xq en index funciona la media querie y acá no*/
 @media screen and (max-width: 800px) {
+  .gridProductos {
+    width: 100%;
+    height: auto;
+    padding-bottom: 10vh;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-flow: column nowrap; }
+  .fotosIzq, .producto1, .producto3, .producto5, .producto7, .producto9 {
+    width: 50vw;
+    border-top-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+    overflow: hidden; }
+  .fotosDer, .producto2, .producto4, .producto6, .producto8, .producto10 {
+    width: 50vw;
+    border-top-right-radius: 7px;
+    border-bottom-left-radius: 7px;
+    overflow: hidden; }
   .sectionMenu__li {
     height: auto;
     display: flex;
@@ -566,7 +571,8 @@ footer {
     footer img {
       width: 4vw; }
     footer .footer-d-u {
-      font-size: 12px; }
+      font-size: 12px;
+      margin-bottom: 2vh; }
     footer .redes {
       font-size: 12px; }
     footer form label {
@@ -596,7 +602,7 @@ footer {
   .nav-links {
     display: block;
     position: fixed;
-    height: 100vh;
+    height: auto;
     width: 100%;
     flex-direction: column;
     clip-path: circle(10px at 10% -10%);
@@ -607,7 +613,9 @@ footer {
   .nav-links.open {
     clip-path: circle(900px at 10% -10%);
     -webkit-clip-path: circle(900px at 10% -10%);
-    pointer-events: all; } }
+    pointer-events: all; }
+  .carrusel.oculto {
+    display: none; } }
 
 .nav1 {
   height: 10vh;
@@ -680,6 +688,3 @@ footer {
   width: 3vw;
   margin-left: 75%;
   margin-top: 17%; }
-
-.oculto {
-  display: none; }
