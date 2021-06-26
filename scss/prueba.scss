@@ -13,46 +13,8 @@
     text-decoration: none;
     font-family: 'Arapey', serif;
 }
+  
 
-/*index*/
-   
-.header{
-    height: 25vh;
-    width: 100%;
-    background-image:linear-gradient(to bottom, #ffe8df,rgb(253, 252, 252));
-    display:flex;
-    flex-flow: row nowrap;
-    align-items: center;
-    justify-content: space-around;
-    border-bottom: solid 7px rgb(148,152,94);
-    .header__h2{
-        width: 10em;
-        animation-duration: 5s;
-        animation-name: show;
-        text-align:center;
-        color: rgb(211,225,216);
-        font-size: 7vw;
-        font-weight: bold;
-        font-style: italic;
-        margin-top: 20px;
-    }
-    @keyframes show {
-        0%{
-            opacity: 0;
-        }
-    
-        100%{
-            opacity: 1;
-        }
-    }
-    .header__logoSas {
-        width: 5vw;
-    }
-    
-    .header__iconoCarrito {
-        width: 3vw;
-    }
-}
 /*menú de navegación*/
 
     .sectionMenu__li {
@@ -122,25 +84,6 @@ footer{
     }
 }
 
-.nav1{
-    height: 10vh;
-    background-color: transparent;
-}
-
-.nav-links{
-    display:flex;
-    list-style: none;
-    height: 100%;
-    background-color: transparent;
-    justify-content: space-around;
-    align-items: center;
-    
-}
-
-.nav-links li a{
-    color: black;
-    text-decoration:none;
-}
 
 .header2{
     background-image:linear-gradient(to bottom, #fcddd1,rgb(253, 252, 252));
@@ -206,11 +149,6 @@ footer{
     margin-left: 75%;
     margin-top: 17%;
 }
-
-.oculto{
-    display: none !important;
-}
-
 
 
 
@@ -282,52 +220,14 @@ footer{
             margin: 4px;
         }
 
-        .carrito{
-            width: 20%;
-        }
-
-        .logo{
-            width: 20%;
-        }
     }
 
-    
-}
-.nav1{
-    position:relative;
-    overflow-y: scroll;
-}
-
-.hamburguesa{
-    position: absolute;
-    cursor: pointer;
-    margin-top: 3vh;
-    z-index: 2;
-    
-
-    .linea{
-        width: 30px;
-        height: 3px;
-        background-color: black;
-        margin:5px;
+    .carritoEdit{
+        width: 6vw;
+        margin-left:55%;
     }
-}
-.nav-links{
-    display: block;
-    position: fixed;
-    height: auto;
-    width: 100%;
-    flex-direction: column;
-    clip-path: circle(10px at 10% -10%);
-    -webkit-clip-path: circle(10px at 10% -10%);
-    transition: all 1s ease-out;
-    pointer-events: none;
-    background-image:linear-gradient(to right, #fcddd1,rgb(253, 252, 252));
 
-}
-
-.nav-links.open{
-    clip-path: circle(900px at 10% -10%);
-    -webkit-clip-path: circle(900px at 10% -10%);
-    pointer-events: all;
+    .logoEdit{
+        width: 6vw;
+    }
 }
