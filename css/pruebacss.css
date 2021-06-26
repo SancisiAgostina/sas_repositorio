@@ -448,6 +448,100 @@ html, body, .gridVideos {
     height: 100%; } }
 
 * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body {
+  padding: 0;
+  margin: 0; }
+
+#notfound {
+  position: relative;
+  height: 100vh; }
+
+#notfound .notfound {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); }
+
+.notfound {
+  max-width: 520px;
+  width: 100%;
+  line-height: 1.4;
+  text-align: center; }
+
+.notfound .notfound-404 {
+  position: relative;
+  height: 200px;
+  margin: 0px auto 20px;
+  z-index: -1; }
+
+.notfound .notfound-404 h1 {
+  font-family: 'Arapey', serif;
+  font-size: 236px;
+  font-weight: 200;
+  margin: 0px;
+  color: #211b19;
+  text-transform: uppercase;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); }
+
+.notfound .notfound-404 h2 {
+  font-family: 'Arapey', serif;
+  font-size: 28px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #211b19;
+  background: #fff;
+  padding: 10px 5px;
+  margin: auto;
+  display: inline-block;
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  right: 0; }
+
+.notfound a {
+  font-family: 'Arapey', serif;
+  display: inline-block;
+  font-weight: 700;
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 13px 23px;
+  background: #94985e;
+  font-size: 18px;
+  -webkit-transition: 0.2s all;
+  transition: 0.2s all; }
+
+.notfound a:hover {
+  color: #94985e;
+  background: #211b19; }
+
+@media only screen and (max-width: 767px) {
+  .notfound .notfound-404 h1 {
+    font-size: 148px; } }
+
+@media only screen and (max-width: 480px) {
+  .notfound .notfound-404 {
+    height: 148px;
+    margin: 0px auto 10px; }
+  .notfound .notfound-404 h1 {
+    font-size: 86px; }
+  .notfound .notfound-404 h2 {
+    font-size: 16px; }
+  .notfound a {
+    padding: 7px 15px;
+    font-size: 14px; } }
+
+* {
   margin: 0%;
   padding: 0%;
   list-style: none;
@@ -539,84 +633,6 @@ footer {
     align-content: left;
     margin-right: 5%; }
 
-@media screen and (max-width: 800px) {
-  .gridProductos {
-    width: 100%;
-    height: auto;
-    padding-bottom: 10vh;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    flex-flow: column nowrap; }
-  .fotosIzq, .producto1, .producto3, .producto5, .producto7, .producto9 {
-    width: 50vw;
-    border-top-left-radius: 7px;
-    border-bottom-right-radius: 7px;
-    overflow: hidden; }
-  .fotosDer, .producto2, .producto4, .producto6, .producto8, .producto10 {
-    width: 50vw;
-    border-top-right-radius: 7px;
-    border-bottom-left-radius: 7px;
-    overflow: hidden; }
-  .sectionMenu__li {
-    height: auto;
-    display: flex;
-    flex-direction: column; }
-  .sectionMenu__fancyButton {
-    font-size: 12px; }
-  footer {
-    height: auto;
-    display: flex;
-    flex-direction: column; }
-    footer img {
-      width: 4vw; }
-    footer .footer-d-u {
-      font-size: 12px;
-      margin-bottom: 2vh; }
-    footer .redes {
-      font-size: 12px; }
-    footer form label {
-      font-size: 12px; }
-    footer form {
-      align-content: flex-end; }
-    footer form input {
-      width: 50px;
-      height: 13px;
-      font-size: 10px; }
-    footer nav {
-      height: 30px;
-      margin: 4px; }
-  .nav1 {
-    position: relative;
-    overflow-y: scroll; }
-  .hamburguesa {
-    position: absolute;
-    cursor: pointer;
-    margin-top: 3vh;
-    z-index: 2; }
-    .hamburguesa .linea {
-      width: 30px;
-      height: 3px;
-      background-color: black;
-      margin: 5px; }
-  .nav-links {
-    display: block;
-    position: fixed;
-    height: auto;
-    width: 100%;
-    flex-direction: column;
-    clip-path: circle(10px at 10% -10%);
-    -webkit-clip-path: circle(10px at 10% -10%);
-    transition: all 1s ease-out;
-    pointer-events: none;
-    background-image: linear-gradient(to right, #fcddd1, #fdfcfc); }
-  .nav-links.open {
-    clip-path: circle(900px at 10% -10%);
-    -webkit-clip-path: circle(900px at 10% -10%);
-    pointer-events: all; }
-  .carrusel.oculto {
-    display: none; } }
-
 .nav1 {
   height: 10vh;
   background-color: transparent; }
@@ -688,3 +704,90 @@ footer {
   width: 3vw;
   margin-left: 75%;
   margin-top: 17%; }
+
+.oculto {
+  display: none !important; }
+
+@media screen and (max-width: 800px) {
+  .gridProductos {
+    width: 100%;
+    height: auto;
+    padding-bottom: 10vh;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-flow: column nowrap; }
+  .fotosIzq, .producto1, .producto3, .producto5, .producto7, .producto9 {
+    width: 50vw;
+    border-top-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+    overflow: hidden; }
+  .fotosDer, .producto2, .producto4, .producto6, .producto8, .producto10 {
+    width: 50vw;
+    border-top-right-radius: 7px;
+    border-bottom-left-radius: 7px;
+    overflow: hidden; }
+  .sectionMenu__li {
+    height: auto;
+    display: flex;
+    flex-direction: column; }
+  .sectionMenu__fancyButton {
+    font-size: 12px; }
+  footer {
+    height: auto;
+    display: flex;
+    flex-direction: column; }
+    footer img {
+      width: 4vw; }
+    footer .footer-d-u {
+      font-size: 12px;
+      margin-bottom: 2vh; }
+    footer .redes {
+      font-size: 12px; }
+    footer form label {
+      font-size: 12px; }
+    footer form {
+      align-content: flex-end; }
+    footer form input {
+      width: 50px;
+      height: 13px;
+      font-size: 10px; }
+    footer nav {
+      height: 30px;
+      margin: 4px; }
+    footer .carrito {
+      width: 20%; }
+    footer .logo {
+      width: 20%; } }
+
+.nav1 {
+  position: relative;
+  overflow-y: scroll; }
+
+.hamburguesa {
+  position: absolute;
+  cursor: pointer;
+  margin-top: 3vh;
+  z-index: 2; }
+  .hamburguesa .linea {
+    width: 30px;
+    height: 3px;
+    background-color: black;
+    margin: 5px; }
+
+.nav-links {
+  display: block;
+  position: fixed;
+  height: auto;
+  width: 100%;
+  flex-direction: column;
+  clip-path: circle(10px at 10% -10%);
+  -webkit-clip-path: circle(10px at 10% -10%);
+  transition: all 1s ease-out;
+  pointer-events: none;
+  background-image: linear-gradient(to right, #fcddd1, #fdfcfc); }
+
+.nav-links.open {
+  clip-path: circle(900px at 10% -10%);
+  -webkit-clip-path: circle(900px at 10% -10%);
+  pointer-events: all; }

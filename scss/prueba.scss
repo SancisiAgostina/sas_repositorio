@@ -4,6 +4,7 @@
 @import "mesaDulce";
 @import "index";
 @import "infoDeContacto";
+@import "404";
 
 *{
     margin:0%;
@@ -121,118 +122,6 @@ footer{
     }
 }
 
-@media screen and (max-width: 800px){
-    .gridProductos{
-        width: 100%;
-        height: auto;
-        padding-bottom:10vh;
-        align-items: center;
-        justify-content: center;
-        display: flex;
-        flex-flow: column nowrap;
-    }
-
-    .fotosIzq{
-        width: 50vw;
-        border-top-left-radius:7px;
-        border-bottom-right-radius: 7px;
-        overflow: hidden;
-    }
-
-    .fotosDer{
-        width: 50vw;
-        border-top-right-radius:7px;
-        border-bottom-left-radius: 7px;
-        overflow: hidden;
-    }   
-    .sectionMenu__li{
-        height: auto;
-        display: flex;
-        flex-direction: column;
-    }
-    .sectionMenu__fancyButton{
-        font-size: 12px;
-    }
-
-    footer{
-        height: auto;
-        display:flex;
-        flex-direction: column;
-    
-        img{
-            width: 4vw;
-        }
-        .footer-d-u{
-            font-size: 12px;
-            margin-bottom: 2vh;
-        }
-        .redes{ 
-            font-size: 12px;
-        }
-        form label{
-            font-size: 12px;
-        }
-
-        form{
-            align-content: flex-end;
-        }
-
-        form input{
-            width: 50px;
-            height: 13px;
-            font-size: 10px;
-        }
-
-        nav{
-            height: 30px;
-            margin: 4px;
-        }
-    }
-
-    .nav1{
-        position:relative;
-        overflow-y: scroll;
-    }
-
-    .hamburguesa{
-        position: absolute;
-        cursor: pointer;
-        margin-top: 3vh;
-        z-index: 2;
-        
-
-        .linea{
-            width: 30px;
-            height: 3px;
-            background-color: black;
-            margin:5px;
-        }
-    }
-    .nav-links{
-        display: block;
-        position: fixed;
-        height: auto;
-        width: 100%;
-        flex-direction: column;
-        clip-path: circle(10px at 10% -10%);
-        -webkit-clip-path: circle(10px at 10% -10%);
-        transition: all 1s ease-out;
-        pointer-events: none;
-        background-image:linear-gradient(to right, #fcddd1,rgb(253, 252, 252));
-
-    }
-
-    .nav-links.open{
-        clip-path: circle(900px at 10% -10%);
-        -webkit-clip-path: circle(900px at 10% -10%);
-        pointer-events: all;
-    }
-
-    .carrusel.oculto{
-        display: none;
-    }
-}
-
 .nav1{
     height: 10vh;
     background-color: transparent;
@@ -318,3 +207,127 @@ footer{
     margin-top: 17%;
 }
 
+.oculto{
+    display: none !important;
+}
+
+
+
+
+
+@media screen and (max-width: 800px){
+    .gridProductos{
+        width: 100%;
+        height: auto;
+        padding-bottom:10vh;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        flex-flow: column nowrap;
+    }
+
+    .fotosIzq{
+        width: 50vw;
+        border-top-left-radius:7px;
+        border-bottom-right-radius: 7px;
+        overflow: hidden;
+    }
+
+    .fotosDer{
+        width: 50vw;
+        border-top-right-radius:7px;
+        border-bottom-left-radius: 7px;
+        overflow: hidden;
+    }   
+    .sectionMenu__li{
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+    .sectionMenu__fancyButton{
+        font-size: 12px;
+    }
+
+    footer{
+        height: auto;
+        display:flex;
+        flex-direction: column;
+    
+        img{
+            width: 4vw;
+        }
+        .footer-d-u{
+            font-size: 12px;
+            margin-bottom: 2vh;
+        }
+        .redes{ 
+            font-size: 12px;
+        }
+        form label{
+            font-size: 12px;
+        }
+
+        form{
+            align-content: flex-end;
+        }
+
+        form input{
+            width: 50px;
+            height: 13px;
+            font-size: 10px;
+        }
+
+        nav{
+            height: 30px;
+            margin: 4px;
+        }
+
+        .carrito{
+            width: 20%;
+        }
+
+        .logo{
+            width: 20%;
+        }
+    }
+
+    
+}
+.nav1{
+    position:relative;
+    overflow-y: scroll;
+}
+
+.hamburguesa{
+    position: absolute;
+    cursor: pointer;
+    margin-top: 3vh;
+    z-index: 2;
+    
+
+    .linea{
+        width: 30px;
+        height: 3px;
+        background-color: black;
+        margin:5px;
+    }
+}
+.nav-links{
+    display: block;
+    position: fixed;
+    height: auto;
+    width: 100%;
+    flex-direction: column;
+    clip-path: circle(10px at 10% -10%);
+    -webkit-clip-path: circle(10px at 10% -10%);
+    transition: all 1s ease-out;
+    pointer-events: none;
+    background-image:linear-gradient(to right, #fcddd1,rgb(253, 252, 252));
+
+}
+
+.nav-links.open{
+    clip-path: circle(900px at 10% -10%);
+    -webkit-clip-path: circle(900px at 10% -10%);
+    pointer-events: all;
+}

@@ -5,4 +5,9 @@ const slide = document.querySelectorAll(".carrusel")
 
 hamburguesa.addEventListener("click", () => {
     navLinks.classList.toggle("open");
-}); slide.classList.toggle("oculto");
+}); 
+
+ 
+
+
+
