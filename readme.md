@@ -23,6 +23,6 @@ Todo el sitio utiliza la misma gama de colores pastel y suaves pero contraste a 
 Tambien contiene gran variedad de fotos y el espacio para que proximamente tengamos un apartado de compras online.
 <hr>
 <h2>Desarrollo y diseño del sitio:</h2>
-**Agostina Sancisi 
+Agostina Sancisi
 
-agossancisi@gmail.com**
+**agossancisi@gmail.com**
